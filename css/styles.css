@@ -389,7 +389,6 @@ button:hover, button:focus {
     margin-right: 80px;
     display: flex;
     flex-direction: column;
-    gap: 23px;
 
 }
 .footer-list-item-sm {
@@ -430,7 +429,6 @@ textarea,
 .form-container {
     display: flex;
     flex-direction: column;
-    gap: 23px;
     margin: 0 auto;
 }
 
@@ -448,6 +446,11 @@ textarea,
 
 .form-input {
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+    border: 1px solid #ffffff;
+    font-size: 12px;
+    line-height: 2;
+    letter-spacing: 0.04em; 
+    padding-left: 16px;
     width: 264px;
     height: 40px;
     padding-left: 17px;
@@ -457,20 +460,23 @@ textarea,
     border-radius: 4px;
     background-color: transparent;
     border-color: #fff;
+    color: #ffffff;
 }
 
 .form-button {
     border-radius: 4px;
     padding: 8px 24px;
-    width: 163px;
+    min-width: 165px;
     height: 40px;
     cursor: pointer;
     display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: #4d5ae5;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
-    letter-spacing: 0.02em;
+    letter-spacing: 0.04em;
     color: #fff;
 
 }
@@ -481,7 +487,7 @@ textarea,
 }
 
 .form-input::placeholder {
-    color: #fff;
+    color: #ffffff;
     font-weight: 400;
     font-size: 12px;
     line-height: 1.16667;
@@ -759,12 +765,12 @@ fieldset {
 .modal-button {
     border-radius: 50%;
     background-color: #e7e9fc;
+    border: 1px solid rgba(0, 0, 0, 0.1);
     min-width: 24px;
     height: 24px;
     display: flex;
     align-items: center; 
     justify-content: center;
-    border: 1px solid rgba(0, 0, 0, 0.1); 
     margin-right: 0;
     border: none;
     margin-bottom: 24px;
@@ -804,7 +810,6 @@ fieldset {
 }
 
 .checkbox-form-label .check-span {
-    display: block;
     width: 16px;
     height: 16px;
     border-radius: 2px;
